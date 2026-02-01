@@ -1,0 +1,58 @@
+@layer components {
+  /* --- Typography Presets --- */
+  .text-display {
+    @apply font-display font-bold tracking-tight;
+  }
+  
+  .text-gradient-gold {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-amber-200 to-amber-500;
+  }
+  
+  .text-gradient-mystic {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 to-purple-400;
+  }
+
+  /* --- Card Styles --- */
+  .card-glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-xl;
+  }
+  
+  .card-glass-strong {
+    @apply bg-cosmic-900/60 backdrop-blur-lg border border-white/10 shadow-2xl;
+  }
+
+  /* --- Interactive Elements --- */
+  .btn-primary {
+    @apply bg-gradient-to-r from-cosmic-600 to-purple-600 text-white 
+           shadow-lg shadow-purple-900/20 active:scale-95 transition-all duration-300;
+  }
+
+  .btn-secondary {
+    @apply bg-white/10 text-white border border-white/10 
+           hover:bg-white/20 active:scale-95 transition-all duration-300;
+  }
+  
+  .btn-icon {
+    @apply p-2 rounded-full hover:bg-white/10 active:scale-90 transition-all duration-200;
+  }
+
+  /* --- Inputs --- */
+  .input-cosmic {
+    @apply w-full bg-cosmic-950/50 border border-white/10 rounded-xl px-4 py-3 text-white 
+           placeholder-gray-500 focus:outline-none focus:border-purple-500/50 focus:ring-1 focus:ring-purple-500/50 
+           transition-all duration-300;
+  }
+}
+
+/* --- Global Glow Effects --- */
+.glow-text {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.glow-icon {
+  filter: drop-shadow(0 0 5px rgba(139, 92, 246, 0.5));
+}
+
+.bottom-safe-padding {
+  padding-bottom: calc(80px + var(--safe-area-bottom));
+}
